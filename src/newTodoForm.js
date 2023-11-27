@@ -1,5 +1,5 @@
 import react, { Component } from "react";
-import uuid from "uuid";
+import { v4 as uuidv4 } from 'uuid'
 import "./TodoForm.css";
 
 class NewTodoForm extends Component {
@@ -15,7 +15,7 @@ class NewTodoForm extends Component {
   }
   handleSubmit(evt) {
     evt.preventDefault();
-    const keying = { ...this.state, id: uuid(), completed: false };
+    const keying = { ...this.state, id: uuidv4(), completed: false };
     this.props.createTodo(keying);
     this.setState({ task: "" });
   }
