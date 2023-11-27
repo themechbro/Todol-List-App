@@ -1,5 +1,5 @@
 import react, { Component } from "react";
-import uuid from "uuid/dist/v4";
+import uuid from "uuid";
 import "./TodoForm.css";
 
 class NewTodoForm extends Component {
