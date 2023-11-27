@@ -42,7 +42,7 @@
   background: none;
   -webkit-appearance: none;
   cursor: pointer;
-  color #FFF;
+  color :#FFF;
 }
 .Todo-editform{
     display:flex;
